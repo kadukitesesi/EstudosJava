@@ -1,8 +1,8 @@
 public class Carro {
-    public static void main(String[] args) {
+
+        // Caracteristicas
         String fabricante;
         String modelo;
         String cor;
         int anoFabricacao;
-    }
 }
