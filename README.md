@@ -8,3 +8,4 @@ Tem como objetivo documentar e demonstrar minha evolução no aprendizado da lin
 
 - Objetos
 - Classes
+- Métodos
