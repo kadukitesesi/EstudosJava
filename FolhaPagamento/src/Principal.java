@@ -15,10 +15,6 @@ public class Principal {
         salario.valorHoraExtra = entrada.nextDouble();
 
         FolhaPagamento folhaPagamento = new FolhaPagamento();
-        double calculoSalario = folhaPagamento.calculaSalario(salario);
-
-        System.out.printf("O seu salário é de: %.2f", calculoSalario);
-
 
         if(salario.fezHoraExtra) {
             System.out.println("Me diga quantas");
@@ -27,6 +23,11 @@ public class Principal {
         } else {
             salario.horasExtras = 0;
         }
+
+        double calculoSalario = folhaPagamento.calculaSalario(salario);
+
+        System.out.printf("O seu salário é de: %.2f", calculoSalario);
+
 
     }
 }
