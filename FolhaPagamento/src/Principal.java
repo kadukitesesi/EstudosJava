@@ -21,7 +21,9 @@ public class Principal {
 
 
         if(salario.fezHoraExtra) {
+            System.out.println("Me diga quantas");
             salario.horasExtras = entrada.nextDouble();
+            
         } else {
             salario.horasExtras = 0;
         }
