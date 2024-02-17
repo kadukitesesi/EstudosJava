@@ -51,6 +51,7 @@ public class Conta {
         System.out.printf("Agencia: %s%n", getAgencia());
         System.out.printf("Conta: %s%n", getConta());
         System.out.printf("Titular: %s%n", getPessoa().getNome());
+        System.out.printf("Idade: %d%n", getPessoa().getIdade());
         System.out.printf("Saldo: %.2f %n", getSaldo());
     }
 
