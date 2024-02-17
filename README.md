@@ -15,3 +15,4 @@ Tem como objetivo documentar e demonstrar minha evolução no aprendizado da lin
 - Construtores
 - Packages
 - Encapsulamento
+- Herança
