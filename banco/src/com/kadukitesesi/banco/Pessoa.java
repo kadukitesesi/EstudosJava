@@ -1,4 +1,4 @@
-package conta;
+package com.kadukitesesi.banco;
 
 import java.util.Objects;
 

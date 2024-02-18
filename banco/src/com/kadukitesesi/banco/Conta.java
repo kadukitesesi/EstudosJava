@@ -1,4 +1,4 @@
-package conta;
+package com.kadukitesesi.banco;
 
 public class Conta {
     private  String agencia;
@@ -10,7 +10,7 @@ public class Conta {
         return saldo;
     }
 
-    public void setSaldo(double saldo) {
+    protected void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 
@@ -44,6 +44,20 @@ public class Conta {
 
     public void setConta(String conta) {
         this.conta = conta;
+    }
+
+    protected void validarSaldoParaSaque(double valorSaque) {
+        if (getSaldo() < valorSaque) {
+            throw new RuntimeException("Saldo insuficiente para saque");
+        }
+    }
+
+    public void sacar(double valor) {
+        if(valor <= 0) {
+            throw new IllegalArgumentException("Valor de depósito deve ser maior que 0");
+        }
+        validarSaldoParaSaque(valor);
+        saldo -= valor;
     }
 
     public void extratoConta() {
