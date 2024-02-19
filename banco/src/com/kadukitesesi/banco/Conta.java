@@ -1,11 +1,17 @@
 package com.kadukitesesi.banco;
 
 public class Conta {
-    private  String agencia;
-    private String conta;
+    private  int agencia;
+    private int conta;
     private Pessoa pessoa;
     private double saldo;
 
+
+    public Conta(Pessoa pessoa, int agencia, int conta) {
+        this.pessoa = pessoa;
+        this.agencia = agencia;
+        this.conta = conta;
+    }
     public double getSaldo() {
         return saldo;
     }
@@ -21,12 +27,7 @@ public class Conta {
         saldo += valor;
     }
 
-
-    public void setAgencia(String agencia) {
-        this.agencia = agencia;
-    }
-
-    public String getAgencia() {
+    public int getAgencia() {
         return agencia;
     }
 
@@ -34,16 +35,8 @@ public class Conta {
         return pessoa;
     }
 
-    public void setPessoa(Pessoa pessoa) {
-        this.pessoa = pessoa;
-    }
-
-    public String getConta() {
+    public int getConta() {
         return conta;
-    }
-
-    public void setConta(String conta) {
-        this.conta = conta;
     }
 
     protected void validarSaldoParaSaque(double valorSaque) {
