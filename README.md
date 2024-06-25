@@ -4,7 +4,7 @@
 
 Tem como objetivo documentar e demonstrar minha evolução no aprendizado da linguagem java
 
-### Atualmente estudando os principios de Programação orientada a objetos.
+### Estudos de java
 
 - Objetos
 - Classes
@@ -18,3 +18,10 @@ Tem como objetivo documentar e demonstrar minha evolução no aprendizado da lin
 - Herança
 - Polimorfismo
 - Classes Abstratas
+- Records
+- File/path
+- String
+- Number
+- Excessões
+- Lambda
+- jdbc
